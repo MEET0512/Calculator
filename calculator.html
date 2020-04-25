@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+   <div class="bg"></div>
+    <div class="container">
+        <h4>Calculater</h4>
+        <div class="control">
+            <input type="text" id="display">
+        </div>
+        <table class="btn-group">
+            <tr>
+                <td> <button onclick="clear_display()">C</button> </td>
+                <td> <button onclick="operation('%')">%</button> </td>
+                <td> <button onclick="operation('/')">/</button> </td>
+                <td> <button onclick="operation('*')">*</button> </td>
+            </tr>
+            <tr>
+                <td> <button onclick="select('7')">7</button> </td>
+                <td> <button onclick="select('8')">8</button> </td>
+                <td> <button onclick="select('9')">9</button> </td>
+                <td> <button onclick="operation('-')">-</button> </td>
+            </tr>
+            <tr>
+                <td> <button onclick="select('4')">4</button> </td>
+                <td> <button onclick="select('5')">5</button> </td>
+                <td> <button onclick="select('6')">6</button> </td>
+                <td> <button onclick="operation('+')">+</button> </td>
+            </tr>
+            <tr>
+                <td> <button onclick="select('1')">1</button> </td>
+                <td> <button onclick="select('2')">2</button> </td>
+                <td> <button onclick="select('3')">3</button> </td>
+                <td rowspan="2"> <button id="eque" onclick="ans()">=</button> </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <button onclick="select('0')">0</button> </td>
+                <td> <button onclick="select('.')">.</button> </td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="calculator.js"></script>
+</body>
+</html>
